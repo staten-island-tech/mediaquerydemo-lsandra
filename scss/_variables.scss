@@ -6,6 +6,29 @@ $colors: (
   black: #0b0c10
 );
 
+$phone:600px;
+$tablet:900px;
+$laptop:1100px;
+$desktop:1100px;
+
 @function color($color-name) {
   @return map-get($colors, $color-name);
+}
+
+@mixin tablet {
+  @media(max-width:#{$tablet}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media(max-width:#{$laptop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media(max-width:#{$desktop}) {
+    @content;
+  }
 }
