@@ -1,17 +1,6 @@
 .user-gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 100vh;
+  width: 100vh;
 }
 
 @media (max-width: 1000px) {
@@ -21,9 +10,11 @@
 }
 
 .user-gallery-header {
-  font-size: 2rem;
-  color: white;
+  font-size: 7rem;
+  color: #ffc400;
   text-transform: uppercase;
+  text-align: center;
+  padding: 3rem;
 }
 
 @media (max-width: 400) {
@@ -55,10 +46,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -79,13 +70,14 @@
 }
 
 .user-gallery-gallery .user-gallery-image {
-  width: 90%;
+  width: 30rem;
+  height: 20rem;
   padding: 1rem;
 }
 
 @media (max-width: 1000px) {
   .user-gallery-gallery .user-gallery-image {
-    height: 30rem;
+    height: 10rem;
     width: auto;
   }
 }
@@ -148,7 +140,7 @@ body {
 
 .header .heading-primary .heading-primary-main {
   font-size: 18rem;
-  text-shadow: 3px 3px #333;
+  text-shadow: 4px 4px #81712b;
   width: 80vw;
   letter-spacing: 1rem;
   text-align: center;
