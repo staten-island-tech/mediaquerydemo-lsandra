@@ -1,6 +1,7 @@
 .user-gallery {
   height: 100vh;
-  background-image: url("../media/dark1.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(34, 33, 31, 0.5))), url("../media/star.jpg");
+  background-image: linear-gradient(to right bottom, rgba(34, 33, 31, 0.5)), url("../media/star.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -65,7 +66,6 @@
 .user-gallery-gallery .user-gallery-image {
   width: 30rem;
   height: 20rem;
-  padding: 1rem;
 }
 
 @media (max-width: 1000px) {
@@ -135,7 +135,7 @@ body {
   font-size: 17rem;
   text-shadow: 4.5px 4.5px #81712b;
   width: 80vw;
-  letter-spacing: 1.25rem;
+  letter-spacing: 1.15rem;
   text-align: center;
   margin: 0 auto;
   color: #fca401;

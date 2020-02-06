@@ -4,7 +4,10 @@
 
 .user-gallery{
     height:100vh;
-    background-image: url("../media/dark1.jpg");
+    background-image:linear-gradient(
+        to right bottom, 
+        rgba(34, 33, 31, 0.5)), 
+    url("../media/star.jpg");
     background-size: cover;
     background-position: center;
     @include laptop{
@@ -47,7 +50,7 @@
    .user-gallery-image{
       width:30rem;
       height: 20rem;
-      padding:1rem;
+    //   padding:20rem;
         @include laptop{
          height: 10rem;
          width:auto;
