@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">  
 
-    <title>Document</title>
+    <style>
+     .mySlides {display:none;}
+    </style>
   </head>
   <body>
     <header class="header">
@@ -27,11 +29,30 @@
         Welcome
       </h1>
       <div class="user-gallery-gallery">
-        <img src="media/ra5.jpg" class="user-gallery-image" />
-        <img src="media/ra2.jpg" alt="" class="user-gallery-image" />
+        <img class="mySlides" src="media/ra5.jpg">
+        <img class="mySlides" src="media/ra6.jpg">
+        <img class="mySlides" src="media/ra7.jpg">
+        <img class="mySlides" src="media/ra8.jpg">
       </div>
       
     </head>
     <script type="text/javascript" src="main.js"></script>
+    <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+      
   </body>
 </html>
