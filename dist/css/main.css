@@ -4,7 +4,7 @@
   background-position: center;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .user-gallery {
     height: 90vh;
   }
@@ -18,25 +18,25 @@
   padding: 10rem;
 }
 
-@media (max-width: 400) {
+@media (max-width: 400px) {
   .user-gallery-header {
     font-size: 1rem;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .user-gallery-header {
     font-size: 3rem;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .user-gallery-header {
     font-size: 4rem;
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1600px) {
   .user-gallery-header {
     font-size: 5rem;
   }
@@ -50,7 +50,7 @@
   margin: 0 auto;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .user-gallery-gallery {
     height: 60%;
     width: 90%;
@@ -61,23 +61,29 @@
   }
 }
 
-.user-gallery-gallery .user-gallery-image {
-  width: 30rem;
-  height: 20rem;
+.user-gallery-image {
+  width: 70rem;
+  height: 50rem;
 }
 
-@media (max-width: 1000px) {
-  .user-gallery-gallery .user-gallery-image {
-    height: 10rem;
+@media (max-width: 900px) {
+  .user-gallery-image {
+    height: 40rem;
     width: auto;
   }
 }
 
-.myslides {
-  display: contents;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (max-width: 400px) {
+  .user-gallery-image {
+    height: 20rem;
+    width: auto;
+  }
+}
+
+.user-gallery-slides img {
+  position: absolute;
+  -webkit-animation: slidewhose 30s infitnite;
+  animation: slideshow 30s infinite;
 }
 
 .text-user {
@@ -166,24 +172,21 @@ body {
   color: #fca401;
 }
 
-@media (max-width: 400) {
+@media (max-width: 400px) {
   .header .heading-primary .heading-primary-main {
     font-size: 1rem;
-    letter-spacing: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header .heading-primary .heading-primary-main {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 900px) {
   .header .heading-primary .heading-primary-main {
-    font-size: 4rem;
-    letter-spacing: 1rem;
-  }
-}
-
-@media (max-width: 1000px) {
-  .header .heading-primary .heading-primary-main {
     font-size: 10rem;
-    letter-spacing: 2.2rem;
   }
 }
 
@@ -200,13 +203,19 @@ body {
   font-family: 'Cinzel', serif;
 }
 
-@media (max-width: 400) {
+@media (max-width: 400px) {
   .header .heading-primary .heading-primary-sub {
     font-size: 1rem;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
+  .header .heading-primary .heading-primary-sub {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
   .header .heading-primary .heading-primary-sub {
     font-size: 3rem;
   }

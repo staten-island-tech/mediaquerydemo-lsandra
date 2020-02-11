@@ -40,22 +40,27 @@
         width:90%;
         flex-direction:row;
     }
-   .user-gallery-image{
-      width:30rem;
-      height: 20rem;
-    //   padding:20rem;
-        @include laptop{
-         height: 10rem;
+}
+ .user-gallery-image{
+      width:70rem;
+      height: 50rem;
+    @include laptop{
+         height: 40rem;
          width:auto;
     }
-     }
-
-
+    @include phone{
+        height:20rem;
+        width:auto;
+    }
 }
 
-.myslides{
-    display: contents;
-    align-items: center;
+
+
+
+.user-gallery-slides img{
+position:absolute;
+-webkit-animation:slidewhose 30s infitnite;
+        animation:slideshow 30s infinite;
     
 }
 
@@ -83,3 +88,4 @@
     letter-spacing: 2.7rem;
     font-family: 'Cinzel', serif;
 }
+

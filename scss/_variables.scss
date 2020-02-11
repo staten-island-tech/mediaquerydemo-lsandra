@@ -7,16 +7,16 @@ $colors: (
 );
 
 $phone:400px;
-$tablet:900px;
-$laptop:1000px;
-$desktop:1100px;
+$tablet:600px;
+$laptop:900px;
+$desktop:1600px;
 
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
 
 @mixin phone {
-  @media(max-width:400) {
+  @media(max-width:#{$phone}) {
     @content;
   }
 }
