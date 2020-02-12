@@ -34,11 +34,15 @@
             <span class="user-primary-main"> Menu</span>
           </h1>
         </div> 
-        <div class="user-gallery-slides">
-        <img class="1" src="media/ra5.jpg" style="width:100%">
-        <img class="2" src="media/ra2.jpg" style="width:100%">
-        <img class="3" src="media/ra7.jpg" style="width:100%">
-        <img class="4" src="media/ra4.jpg" style="width:100%"> 
+        <div class="user-gallery-slide">
+        <!-- <img class="user-gallery-slides" src="media/ra5.jpg" style="width:100%">
+        <img class="user-gallery-slides" src="media/ra2.jpg" style="width:100%">
+        <img class="user-gallery-slides" src="media/ra7.jpg" style="width:100%">
+        <img class="user-gallery-slides" src="media/ra4.jpg" style="width:100%">  -->
+        <img src="media/ra5.jpg" alt="slide4">
+        <img src="media/ra2.jpg" alt="slide3">
+        <img src="media/ra7.jpg" alt="slide2">
+        <img src="media/ra4.jpg" alt="slide1">
         </div>
       </div>
       
@@ -50,7 +54,7 @@
       
       function carousel() {
         var i;
-        var x = document.getElementsByClassName("mySlides");
+        var x = document.getElementsByClassName("user-gallery-slides");
         for (i = 0; i < x.length; i++) {
           x[i].style.display = "none";  
         }
