@@ -4,9 +4,9 @@
   background-position: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .user-gallery {
-    height: 90vh;
+    height: 100vh;
   }
 }
 
@@ -32,7 +32,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .user-gallery-header {
     font-size: 4rem;
   }
@@ -40,7 +40,7 @@
 
 @media (max-width: 1600px) {
   .user-gallery-header {
-    font-size: 5rem;
+    font-size: 10rem;
   }
 }
 
@@ -50,16 +50,24 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .user-gallery-gallery {
     height: 60%;
     width: 90%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 }
 
@@ -68,7 +76,7 @@
   height: 50rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .user-gallery-image {
     height: 40rem;
     width: auto;
@@ -97,6 +105,27 @@
   width: 100%;
   height: auto;
   padding: 2rem;
+}
+
+@media (max-width: 1100px) {
+  .user-gallery-slide img {
+    width: auto;
+    height: 30vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .user-gallery-slide img {
+    width: auto;
+    height: 20vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .user-gallery-slide img {
+    width: auto;
+    height: 10vh;
+  }
 }
 
 @-webkit-keyframes fling-minislide {
@@ -228,9 +257,15 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .header .heading-primary .heading-primary-main {
-    font-size: 15rem;
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .header .heading-primary .heading-primary-main {
+    font-size: 8rem;
   }
 }
 
@@ -250,6 +285,7 @@ body {
 @media (max-width: 400px) {
   .header .heading-primary .heading-primary-sub {
     font-size: 1rem;
+    line-height: 1rem;
   }
 }
 
@@ -259,10 +295,10 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .header .heading-primary .heading-primary-sub {
-    font-size: 1.5rem;
-    line-height: 3rem;
+    font-size: 1rem;
+    line-height: 2rem;
   }
 }
 

@@ -58,8 +58,11 @@ body {
        
     }
     @include laptop {
-        font-size: 15rem;
+        font-size: 8rem;
        
+    }
+    @include desktop{
+      font-size:8rem;
     }
     }
 
@@ -76,13 +79,14 @@ body {
       font-family: 'Cinzel', serif;
       @include phone{
         font-size:1rem;
+        line-height:1rem;
       }
       @include tablet{
         font-size:1rem;
       }
       @include laptop {
-        font-size: 1.5rem;
-        line-height:3rem;
+        font-size: 1rem;
+        line-height:2rem;
       }
     }
   }
