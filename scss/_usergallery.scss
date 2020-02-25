@@ -14,31 +14,29 @@
     color:rgb(255, 196, 0);
     text-transform:uppercase;
     text-align: center; 
-    padding: 4rem;
+    padding: 10rem;
     letter-spacing: 1rem;
     text-shadow: 5px 5px rgb(90, 80, 35);
-    @include phone{
-        font-size:1rem;
-    }
-    @include tablet{
-        font-size:3rem;
-    }
     @include laptop{
-        font-size:4rem;
-    }
-    @include desktop{
         font-size:10rem;
     }
+    @include tablet{
+        font-size:8rem;
+    }
+    @include phone{
+        font-size:4rem;
+    }
+    
 }
 
 .user-gallery-gallery{
-    width:100%;
+    width:100vw;
     align-items:left;
     margin:0 auto;
     display: flex;
     align-content: center;
     justify-content: space-evenly;
-    flex-direction: column;
+    flex-direction: row;
     @include laptop{
         height:60%;
         width:90%;
@@ -46,12 +44,12 @@
     }
 }
  .user-gallery-image{
-      width:80rem;
-      height: 60rem;
-      display: flex;
+    width:80rem;
+    height: 60rem;
+    display: flex;
     align-content: center;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
     @include laptop{
          height: 40rem;
          width:auto;
@@ -64,14 +62,14 @@
 
 
 .user-gallery-slide{
-    width:90vh;
+    width:100vh;
     height:80vh; 
     overflow:hidden;
     position:relative; 
     display: flex;
     align-content: center;
     justify-content: space-evenly;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .user-gallery-slide img{
@@ -116,32 +114,17 @@
 //         rgba(30,29,27, 0.5));
 // }
 
-.user-primary {
-    color: rgb(240, 237, 59);
-    text-transform: uppercase;
-}
-
-.user-primary-main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 2.7rem;
-    font-family: 'Cinzel', serif;
-}
 
 .user-gallery-paragraph{
- height:50vh;
- width: 50vh;
+ width: 80vh;
+ height:100vh;
  color:red;
- font-size: 1rem;
+ font-size: 1.5rem;
  position:relative;
- 
+ display: flex;
+align-content: center;
+justify-content: space-evenly;
+flex-direction: row;
 }
 
-.user-gallery-p-container{
-    display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
 
