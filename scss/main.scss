@@ -15,6 +15,72 @@ body {
   background-color: color(black);
 }
 
+.nav {
+  font-family:'Cinzel', serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.6rem;
+ 
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  padding-right: 10rem;
+}
+
+.nav a {
+  padding: .5em .8em;
+  color: rgb(201, 184, 184);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #3E8914;
+  border-right: 3px solid #2E640F;
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #2E640F;
+  border-left: 3px solid #3E8914;
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: #3DA35D;
+}
+
 .header {
   position: relative;
   height: 100vh;
@@ -33,11 +99,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
     text-transform: uppercase;
     width: 100vw;
     text-align: center;
-    //text-shadow: 3px 3px 8px #111;
     font-weight: 700;
     animation-name: slide-in;
     animation-duration: 1s;
@@ -45,12 +109,12 @@ body {
 
     .heading-primary-main {
       font-size: 17rem;
-      text-shadow: 4.5px 4.5px rgb(104, 92, 42);
+      text-shadow: 4.5px 4.5px rgb(143, 129, 73);
       width: 80vw;
       letter-spacing: 1.15rem;
       text-align: center;
       margin: 0 auto;
-      color: rgb(255, 166, 0);
+      color: rgb(255, 153, 0);
     @include laptop{
         font-size: 15rem;
         
@@ -78,17 +142,19 @@ body {
       font-style: italic;
       font-family: 'Cinzel', serif;
       @include laptop{
-        font-size:1rem;
-        line-height:1rem;
+        font-size:2rem;
+        line-height:3rem;
+        letter-spacing:0.5rem;
       }
       @include tablet{
-        font-size:2rem;
+        font-size:1.5rem;
         line-height:3rem;
         padding:1rem;
       }
       @include phone {
         font-size: .75rem;
-        line-height:1.5rem;
+        line-height:0.75rem;
+        letter-spacing:0.5rem;
       }
     }
   }
@@ -102,3 +168,17 @@ body {
     transform: translateX(0);
   }
 }
+
+.header-image{
+  width:80rem;
+  height: 53rem;
+  @include laptop{
+      height: 40rem;
+      width:auto;
+  }
+  @include phone{
+      height:20rem;
+      width:auto;
+  }
+}
+
