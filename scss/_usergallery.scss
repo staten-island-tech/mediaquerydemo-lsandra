@@ -74,7 +74,7 @@
     opacity:0;
     width: 100%; 
     height: auto;
-    padding:1rem;
+    padding:2rem;
 }
 
 
@@ -99,17 +99,18 @@
 
 
 .user-gallery-paragraph{
- width: 80vh;
- color:rgb(247, 62, 62);
- font-size: 1rem;
+ width: 100vh;
+ color:rgb(250, 32, 32);
+ font-size: 1.25rem;
  position:relative;
  display: flex;
- align-content: center;
- justify-content: space-evenly;
- flex-direction: row;
- font-family:'Cinzel', serif;
+ flex-direction: column;
+ font-family: 'Kaushan Script', ;
+ margin:3rem;
+ padding-right:4rem;
+ text-align: center;
  @include laptop{
-   font-size:1.5rem;
+   font-size:1rem;
  }
  @include tablet{
    font-size:.7rem;
@@ -119,5 +120,46 @@
    font-size:0.35rem;
  }
 }
+
+.user-gallery-button {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #ff3636;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Kaushan Script', ;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 225px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .user-gallery-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .user-gallery-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .user-gallery-button:hover span {
+    padding-right: 25px;
+  }
+  
+  .user-gallery-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
 
