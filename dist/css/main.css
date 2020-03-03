@@ -314,6 +314,7 @@
   text-shadow: 4.5px 4.5px #8f8149;
   padding: 3rem;
   text-align: center;
+  letter-spacing: 0.5rem;
 }
 
 @media (max-width: 1100px) {
