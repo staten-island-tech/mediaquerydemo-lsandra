@@ -59,12 +59,12 @@
         padding:1rem;
     }
     @include tablet{
-        width:80vh;
+        width:90vh;
         height:70vh;
     }
     @include phone{
-        width:40vh;
-        height:20vh;
+        width:50vh;
+        height:30vh;
     }
 }
 
@@ -112,14 +112,14 @@
  padding-right:4rem;
  text-align: center;
  @include laptop{
-   font-size:1rem;
+   font-size:0.5rem;
  }
  @include tablet{
    font-size:.7rem;
    padding:1rem;
  }
  @include phone{
-   font-size:0.35rem;
+   font-size:0.2rem;
  }
 }
 

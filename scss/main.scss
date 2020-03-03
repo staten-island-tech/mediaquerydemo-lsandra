@@ -41,6 +41,19 @@ body {
   position: relative;
   text-decoration: none;
   font-size: 20px;
+  @include laptop{
+    font-size:1rem;
+    padding:2rem;
+   }
+ 
+   @include tablet{
+ 
+   }
+   
+   @include phone{
+    font-size:0.5rem;
+   }
+ 
 }
 
 .nav a::before,
@@ -108,7 +121,7 @@ body {
     animation-timing-function: ease-out;
 
     .heading-primary-main {
-      font-size: 17rem;
+      font-size: 19rem;
       text-shadow: 4.5px 4.5px rgb(143, 129, 73);
       width: 80vw;
       letter-spacing: 1.15rem;
