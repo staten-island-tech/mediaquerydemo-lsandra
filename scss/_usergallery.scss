@@ -78,7 +78,7 @@
 }
 
 
-@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+@keyframes fling-minislide {25%{opacity:1;} 30%{opacity:0;}}
 .user-gallery-slide img:nth-child(7){animation-delay:0s;}
 .user-gallery-slide img:nth-child(6){animation-delay:5s;}
 .user-gallery-slide img:nth-child(5){animation-delay:10s;}
@@ -150,5 +150,7 @@
     opacity: 1;
     right: 0;
   }
+
+  
 
 
