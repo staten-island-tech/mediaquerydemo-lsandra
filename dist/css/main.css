@@ -455,12 +455,25 @@
 
 .location-text {
   background-color: white;
-  font-size: 10rem;
+  font-family: "Cinzel", serif;
   font-style: italic;
   text-align: center;
   font-weight: 600;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.location:hover .location-image {
+  -webkit-transform: translateY(1rem) scale(1.1);
+          transform: translateY(1rem) scale(1.1);
+  border-radius: 0;
+}
+
+.location:hover .location-text {
+  -webkit-transform: translateY(-2rem) scale(1.1);
+          transform: translateY(-2rem) scale(1.1);
+  font-size: 8rem;
+  color: white;
 }
 
 html {

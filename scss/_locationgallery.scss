@@ -36,10 +36,18 @@
 
 .location-text {
     background-color: white;
-    font-size: 10rem;
-    // font-family: "Cinzel", serif;
+    font-family: "Cinzel", serif;
     font-style: italic;
     text-align: center;
     font-weight: 600;
     transition: 0.3s;
+}
+.location-image:hover{
+    transform: translateY(1rem) scale(1.1);
+    border-radius: 0;
+}
+.location-text:hover {
+    transform: translateY(-2rem) scale(1.1);
+    font-size: 8rem;
+    color: white;
 }
