@@ -1,6 +1,5 @@
-.location{
-   width:100%;
-   height:95vh;
+.locations{
+   width:100vw;
    display: flex; 
    flex-direction:column;
    justify-content: space-evenly; 
@@ -26,12 +25,9 @@
 }
 
 .location-image{
-    height:35vh;
-    width:55vh;
-    padding-right:3rem;
-    padding-bottom: 10rem;
-    border-radius: 5%;
-    transition: 0.3s;
+    height:32vh;
+    width:50vh;
+    transition-duration: 0.3s;
 }
 
 .location-text {
@@ -40,14 +36,14 @@
     font-style: italic;
     text-align: center;
     font-weight: 600;
-    transition: 0.3s;
+    transition-duration:0.3s;
+    font-size:2rem;
+    
 }
-.location-image:hover{
-    transform: translateY(1rem) scale(1.1);
-    border-radius: 0;
+.location-image:hover {
+    transform: scale(1.1); 
+    font-size:3rem;
 }
 .location-text:hover {
-    transform: translateY(-2rem) scale(1.1);
-    font-size: 8rem;
-    color: white;
+    transform: scale(1.1); 
 }
