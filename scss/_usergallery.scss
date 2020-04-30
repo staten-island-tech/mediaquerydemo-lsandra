@@ -3,7 +3,7 @@
 
 
 .user-gallery{
-    max-width: 100vw;
+    max-width: 1000vw;
 }
 
 .user-gallery-header{
@@ -88,7 +88,6 @@
 .user-gallery-paragraph{
  width: 100vh;
  color:rgb(250, 32, 32);
- font-size: 1rem;
  position:relative;
  display: flex;
  flex-direction: column;
@@ -96,15 +95,16 @@
  margin:3rem;
  padding-right:2rem;
  text-align: center;
- @include laptop{
-   font: size 0.7rem;
- }
- @include tablet{
-   font: size 0.4rem;
- }
- @include phone{
-   font-size:0.2rem;
- }
+}
+ 
+.user-paragraph{
+  font-size:2rem;
+  @include laptop{
+    font-size:1rem;
+  }
+  @include phone{
+    font-size:2px;
+  }
 }
 
 .user-gallery-button {
@@ -121,6 +121,11 @@
     transition: all 0.5s;
     cursor: pointer;
     margin: 10px;
+    @include phone{
+      font-size:5px;
+      width:30px;
+     
+    }
   }
   
   .user-gallery-button span {

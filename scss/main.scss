@@ -15,6 +15,13 @@ html {
 
 body {
   background-color: color(black);
+  @include laptop{
+   width:1000; 
+  }
+  @include phone{
+    width:100vw;
+  }
+  
 }
 
 .nav {
@@ -22,8 +29,10 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
-  letter-spacing: 0.6rem;
- 
+  letter-spacing: 0.5em;
+  @include phone{
+    letter-spacing:0px;
+  }
 }
 
 .nav * {
@@ -35,6 +44,10 @@ body {
   display: inline-block;
   list-style: outside none none;
   padding-right: 10rem;
+  @include tablet{
+  padding-right: 50px;
+  }
+
 }
 
 .nav a {
@@ -43,19 +56,24 @@ body {
   color: rgb(201, 184, 184);
   position: relative;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   @include laptop{
     font-size:1rem;
-    padding:2rem;
-   }
+    padding-bottom:1rem;
+  }
+  @include tablet{
+    font-size:2px;
+    padding:0.001px;
+    padding-bottom:0rem;
  
-   @include tablet{
- 
-   }
+  }
+  @include phone{
+    font-size: 2px;
+    padding: .0001px .0002px;
+    padding-bottom:0rem;
    
-   @include phone{
-    font-size:0.5rem;
-   }
+
+  }
  
 }
 
@@ -102,79 +120,83 @@ body {
   height: 100vh;
   background-position: top;
   background-size: cover;
- .text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+}
+ 
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  width: 100vw;
+  text-align: center;
+  font-weight: 700;
+  animation-name: slide-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+   
+.heading-primary-main {
+  font-size: 17rem;
+  text-shadow: 4.5px 4.5px rgb(143, 129, 73);
+  width: 80vw;
+  letter-spacing: 1.15rem;
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(255, 153, 0);
+  @include laptop{
+   font-size: 16rem;
   }
-
-  .heading-primary {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase;
-    width: 100vw;
-    text-align: center;
-    font-weight: 700;
-    animation-name: slide-in;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-
-    .heading-primary-main {
-      font-size: 17rem;
-      text-shadow: 4.5px 4.5px rgb(143, 129, 73);
-      width: 80vw;
-      letter-spacing: 1.15rem;
-      text-align: center;
-      margin: 0 auto;
-      color: rgb(255, 153, 0);
-    @include laptop{
-        font-size: 17rem;
-        
-    }
-     @include tablet{
-        font-size: 13rem;
+  @include tablet{
+   font-size: 12rem;
+  }
+  @include phone{
+    font-size: 3.5rem;
+    text-shadow: 2px 2px rgb(143, 129, 73);
        
-    }
-    @include phone{
-      font-size: 8rem;
-       
-    }
+  }
   
-    }
+}
 
-    .heading-primary-sub {
-      font-size: 1.5rem;
-      width: 80vw;
-      margin: 0 auto;
-      text-align: center;
-      color: rgb(255, 1, 1);
-      letter-spacing: 1rem;
-      padding: 1rem;
-      line-height: 4rem;
-      font-style: italic;
-      font-family: 'Cinzel', serif;
-      @include laptop{
-        font-size:1.5rem;
-        line-height:3rem;
-        letter-spacing:0.5rem;
-      }
-      @include tablet{
-        font-size:1.5rem;
-        line-height:3rem;
-        padding:1rem;
-      }
-      @include phone {
-        font-size: .75rem;
-        line-height:0.75rem;
-        letter-spacing:0.5rem;
-      }
-    }
+.heading-primary-sub {
+  font-size: 1.5rem;
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(255, 1, 1);
+  letter-spacing: 1rem;
+  padding: 1rem;
+  line-height: 4rem;
+  font-style: italic;
+  font-family: 'Cinzel', serif;
+  @include laptop{
+    font-size:1.5rem;
+    line-height:2.5rem;
+    letter-spacing:0.5rem;
+  }
+  @include tablet{
+    font-size:1rem;
+    line-height:3rem;
+    letter-spacing:0.5rem;
+     
+  }
+  @include phone {
+   font-size: 4px;
+   line-height: 5px;
+   letter-spacing:3px;
+
   }
 }
+
+
 
 @keyframes slide-in {
   0% {
@@ -189,12 +211,16 @@ body {
   width:70rem;
   height: 47rem;
   @include laptop{
-      height: 47rem;
-      width:70rem;
+   width:65rem;
+   height:42rem;
+  }
+  @include tablet{
+   width:65rem;
+   height:43rem;
   }
   @include phone{
-      height:20rem;
-      width:50rem;
+    width:20rem;
+    height:12rem;
   }
 }
 

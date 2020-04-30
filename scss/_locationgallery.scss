@@ -28,6 +28,12 @@
     height:32vh;
     width:50vh;
     transition-duration: 0.3s;
+    @include laptop{
+        height: 25vh;
+        width:40vw;
+        padding:3rem;
+        margin:3rem;
+    }
 }
 
 .location-text {
